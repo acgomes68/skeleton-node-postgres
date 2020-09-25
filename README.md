@@ -274,7 +274,9 @@ http://localhost:3333/users
 Esse passo pode ser realizado através do navegador, pelo ambiente gráfico de teste da API ou até mesmo pelo terminal através do comando **curl** caso possua o programa instalado.
 
 **Visão do navegador**<br />
-![Preview-navegador](./public/screenshots/preview-navegador.png)
+![Preview-navegador-01](./public/screenshots/preview-navegador-01.png)
+
+![Preview-navegador-02](./public/screenshots/preview-navegador-02.png)
 
 **Visão através do comando curl**<br />
 ```
