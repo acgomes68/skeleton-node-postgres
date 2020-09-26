@@ -5,7 +5,7 @@
 ![Badge](https://img.shields.io/badge/Postgres-v11-%23336791?style=plastic&logo=PostgreSQL)
 ![Badge](https://img.shields.io/badge/license-MIT-brightgreen?style=plastic)
 
-<h4 align="center"><b>skeleton-node</b> | <b>Em construção...</b></h4>
+<h4 align="center"><b>skeleton-node-postgres</b> | <b>Em construção...</b></h4>
 
 ## **skeleton-node-postgres** ##
 ### Skeleton Docker-Alpine-Node.js-Express-Postgres ###
@@ -162,7 +162,7 @@ Considerando que todos os passos descritos acima foram realizados, abrir o termi
 $ cd ~
 
 # Realizar o clone desse projeto em um diretório local com o nome desejado, por exemplo "novo-projeto"
-$ git clone https://github.com/acgomes68/skeleton-node.git novo-projeto
+$ git clone https://github.com/acgomes68/skeleton-node-postgres.git novo-projeto
 ```
 
 Se tudo estiver OK, todos os arquivos do projeto serão baixados para o diretório /home/***seu-usuario***/**novo-projeto**, de modo que a estrutura fique como demonstrado abaixo.
