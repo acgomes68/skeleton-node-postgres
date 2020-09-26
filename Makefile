@@ -23,6 +23,7 @@ help:
 	@echo "  update     Update Node dependencies with yarn"
 
 init:
+	@yarn
 	@make node-up
 	@docker-compose exec node yarn install
 
@@ -109,9 +110,9 @@ test:
 	@#make unit
 
 uninstall:
-	@make clean
 	@make stop
 	@make drop-db;
+	@make clean
 
 unit:
 	@make node-up
