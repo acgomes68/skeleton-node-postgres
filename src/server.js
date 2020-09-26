@@ -4,4 +4,6 @@ import app from './app';
 
 const { APP_HOST, APP_PORT } = process.env;
 
-app.listen(APP_PORT, APP_HOST);
+app.listen(APP_PORT, APP_HOST, () =>
+    console.log(`Now browse to ${APP_HOST}:${APP_PORT}/graphql`)
+);
