@@ -3,12 +3,9 @@ import 'dotenv/config';
 import cors from 'cors';
 import Youch from 'youch';
 import express from 'express';
-import expressGraphql from 'express-graphql';
 import 'express-async-errors';
 
 import routes from './routes';
-import schema from './graphql/schema';
-import resolver from './graphql/users';
 
 import './database';
 
@@ -24,14 +21,6 @@ class App {
     middlewares() {
         this.server.use(express.json());
         this.server.use(cors());
-        this.server.use(
-            '/graphql',
-            expressGraphql({
-                schema,
-                rootValue: resolver,
-                graphiql: true,
-            })
-        );
     }
 
     routes() {

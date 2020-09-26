@@ -2,19 +2,18 @@
 ![Badge](https://img.shields.io/badge/Docker-Latest-%232496ED?style=plastic&logo=Docker)
 ![Badge](https://img.shields.io/badge/Alpine-Latest-%230D597F?style=plastic&logo=Alpine-Linux)
 ![Badge](https://img.shields.io/badge/Node-LTS^12.18.4-%23339933?style=plastic&logo=Node.js)
-![Badge](https://img.shields.io/badge/GrapQL-^15.3.0-%23e10098?style=plastic&logo=GraphQL)
 ![Badge](https://img.shields.io/badge/Postgres-v11-%23336791?style=plastic&logo=PostgreSQL)
 ![Badge](https://img.shields.io/badge/license-MIT-brightgreen?style=plastic)
 
 <h4 align="center"><b>skeleton-node</b> | <b>Em construção...</b></h4>
 
 ## **skeleton-node-postgres** ##
-### Skeleton Docker-Alpine-NodeJS-Express-GraphQL-Postgres ###
+### Skeleton Docker-Alpine-Node.js-Express-Postgres ###
 
 ---
 
 ## **Descrição** ##
-Esse é um modelo inicial para desenvolvimento de **API's RESTful** que pode ser utilizado com **Docker** tendo como linguagem base o **NodeJS** acessando uma base relacional **Postgres** via **GraphQL**. Na implementação com **Docker** é utilizada a imagem **NodeJS-LTS** instalada na distribuição **GNU/Linux Alpine**.
+Esse é um modelo inicial para desenvolvimento de **API's RESTful** que pode ser utilizado com **Docker** tendo como linguagem base o **Node.js** acessando uma base relacional **Postgres**. Na implementação com **Docker** é utilizada a imagem **Node.js-LTS** instalada na distribuição **GNU/Linux Alpine**.
 
 ---
 
@@ -38,7 +37,6 @@ Esse é um modelo inicial para desenvolvimento de **API's RESTful** que pode ser
 * [Tecnologias](#Tecnologias)
 * [Referências](#Referências)
 * [Autor](#Autor)
-* [Agradecimentos](#Agradecimentos)
 * [Licença](#Licença)
 <!--te-->
 
@@ -64,16 +62,16 @@ Esse é um modelo inicial para desenvolvimento de **API's RESTful** que pode ser
 - [x] Atalho para atualização de dependências<br />
 - [x] Atalho para visualização de logs com atualização automática<br />
 - [x] Utilização de migrations e seeds<br />
-- [ ] Ambiente gráfico integrado para teste dos serviços<br />
-- [ ] Implementação de tipagem e OOP com Typescript<br />
 - [ ] Path Mapping para imports<br />
+- [ ] Implementação de tipagem e OOP com Typescript<br />
 - [ ] Testes unitários<br />
+- [ ] Ambiente gráfico integrado para teste dos serviços<br />
 
 ---
 
 ### **Arquitetura** ###
-Foi desenvolvida uma arquitetura voltada para **microsserviços** com cada um deles separados em **containers Docker** que podem ser escalados mediante a demanda necessária. A estrutura básica foi desenvolvida em **NodeJS com Express**, ambos responsáveis pela gestão e roteamento das requisições **HTTP usando padrão REST**.
-Foi criada uma pequena estrutura de dados relacionais com **Postgres**, sendo que a comunicação da camada de código com as bases de dados se faz através da abstração do **GraphQL**.
+Foi desenvolvida uma arquitetura voltada para **microsserviços** com cada um deles separados em **containers Docker** que podem ser escalados mediante a demanda necessária. A estrutura básica foi desenvolvida em **Node.js com Express**, ambos responsáveis pela gestão e roteamento das requisições **HTTP usando padrão REST**.
+Foi criada uma pequena estrutura de dados relacionais com **Postgres** usando o **Sequelize** para persistência.
 
 ---
 
@@ -356,16 +354,14 @@ A partir desse ponto, o **projeto estará totalmente desinstalado** e somente re
 ---
 
 ## **Tecnologias** ##
-- [**NodeJS**](https://nodejs.org/en/): linguagem **Javascript** padrão **ES6** voltada para o **backend** e a construção das **API's**;
+- [**Node.js**](https://nodejs.org/en/): linguagem **Javascript** padrão **ES6** voltada para o **backend** e a construção das **API's**;
 - [**Postgres**](https://www.postgresql.org/): banco de dados relacional
-- [**GraphQL**](https://graphql.org/): Query Language fortemente tipada e direcionada para interação entre frontend, backend e ORM's;
 - [**Docker**](https://www.docker.com/): plataforma que facilita a criação e a administração de pacotes de software em ambientes isolados e padronizados;
 - [**Alpine**](https://www.alpinelinux.org/): distribuição GNU/Linux pequena, simples e segura;
 
 ---
 
 ## **Referências** ##
-[Iniciando com GraphQL no NodeJS e ExpressJS](https://blog.rocketseat.com.br/iniciando-graphql-nodejs-expressjs/)<br />
 [Gerenciando variáveis ambiente no NodeJS](https://blog.rocketseat.com.br/variaveis-ambiente-nodejs/)<br />
 [Teste unitário com Jest](https://www.devmedia.com.br/teste-unitario-com-jest/41234)<br />
 [Por que escrever testes automatizados se eu mesmo posso testar?](https://blog.rocketseat.com.br/por-que-escrever-testes-automatizados/)<br />
@@ -382,23 +378,6 @@ A partir desse ponto, o **projeto estará totalmente desinstalado** e somente re
 
 [![Linkedin Badge](https://img.shields.io/badge/-Antonio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/antonio-carlos-gomes/)](https://www.linkedin.com/in/antonio-carlos-gomes/)
 [![Gmail Badge](https://img.shields.io/badge/-acgomes68@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:acgomes68@gmail.com)](mailto:acgomes68@gmail.com)
-
----
-
-## **Agradecimentos** ##
-Abaixo lista de pessoas e empresas que são inspirações e referências para realização desse projeto. A todos os citados e aos demais que, por ventura, não estejam na lista, mas que, com certeza, estarão sempre na minha extensa lista de gratidão.<br />
-
-**MUITO OBRIGADO!**
-
-PS: importante frisar que é uma lista ordenada alfabeticamente, não por grau de relevância, pois todos, sem exceção, possuem igual e gigante importância.
-
-- [Diego Fernandes](https://blog.rocketseat.com.br/author/diego/)
-- [Guilherme Rodz]()
-- [Higo Ribeiro](https://blog.rocketseat.com.br/author/higo/)
-- [Robson Marques](https://www.linkedin.com/in/robsonmarquescode/)
-- [Rocketseat](https://rocketseat.com.br/)
-- [Thiago Marinho](https://blog.rocketseat.com.br/author/thiago/)
-
 
 ---
 
