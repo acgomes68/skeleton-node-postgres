@@ -31,6 +31,7 @@ help:
 	@echo "  logs               Watch log output"
 	@echo "  remove <package>   Uninstall Node package with yarn"
 	@echo "  restart            Restart all containers"
+	@echo "  run                Run main service with curl"
 	@echo "  start              Start all containers"
 	@echo "  status             Show containers current status"
 	@echo "  stop               Stop all services"
@@ -118,6 +119,9 @@ remove: package
 
 restart:
 	@docker-compose restart
+
+run:
+	@curl ${APP_URL}:${APP_PORT}/users
 
 seeds:
 	@make node-up

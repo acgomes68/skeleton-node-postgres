@@ -1,5 +1,5 @@
 {
-  "name": "modelo",
+  "name": "modelo-node-postgres",
   "version": "1.0.0",
   "description": "Aplicação modelo para NodeJS com SGBD Relacional Postgres",
   "author": {

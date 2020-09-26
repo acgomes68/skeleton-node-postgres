@@ -232,6 +232,7 @@ Commands:
   logs              Watch log output
   remove <package>  Uninstall Node package with yarn
   restart           Restart all containers
+  run               Run main service with curl
   start             Start all containers
   status            Show containers current status
   stop              Stop all services
@@ -280,7 +281,7 @@ Esse passo pode ser realizado através do navegador, pelo ambiente gráfico de t
 
 **Visão através do comando curl**<br />
 ```
-$ curl http://localhost:3333/users
+$ make run
 [{"id":1,"name":"test user","email":"user@test.com","createdAt":"2020-09-25T03:33:09.490Z","updatedAt":null}]%
 ```
 
